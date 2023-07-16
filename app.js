@@ -25,6 +25,7 @@ app.all('*', (req, res) => {
 
 
 // connect to the mongodb
+mongoose.set('strictQuery', true);
 mongoose
   .connect('mongodb://localhost:27017/blog_app', {
     useNewUrlParser: true,
