@@ -27,7 +27,7 @@ app.all('*', (req, res) => {
 // connect to the mongodb
 mongoose.set('strictQuery', true);
 mongoose
-  .connect('mongodb://localhost:27017/blog_app', {
+  .connect('mongodb+srv://dailystory:pEICGmy0zYYtY9nl@cluster0.pseuzpc.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
